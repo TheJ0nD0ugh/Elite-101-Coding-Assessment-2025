@@ -80,7 +80,7 @@ def find_all_tables_for_size(tables, party_size):
     i = 0
     while True:
         if tables_data[i]['occupied'] == False:
-            if tables_data[i]['capacity'] >= party_size:
+            if tables_data[i]['capacity'] == party_size:
                 all_tables_for_size.append(tables[i]["table_id"])
                 i += 1
                 if i >= len(tables):
